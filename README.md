@@ -25,3 +25,6 @@ To get started with the Rock/Paper/Scissors Tournament simulation, follow these 
 2. Compile the Erlang Files
 
 Compile the Erlang files using erlc:
+erlc game.erl
+erlc player.erl
+
