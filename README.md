@@ -39,11 +39,11 @@ To get started with the Rock/Paper/Scissors Tournament simulation:
 
 The player data file should be formatted as follows:
 
-```erlang
-{sam,26}.
-{jill,12}.
-{ahmad,17}.
-
+   ```erlang
+   {sam,26}.
+   {jill,12}.
+   {ahmad,17}.
+   ```
 
 ## Output
 
