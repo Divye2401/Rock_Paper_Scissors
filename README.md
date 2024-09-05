@@ -21,6 +21,17 @@ To get started with the Rock/Paper/Scissors Tournament simulation:
    
 2. Compile the Erlang files using the following commands:
 
-```bash
-erlc game.erl
-erlc player.erl
+   ```bash
+   erlc game.erl
+   erlc player.erl
+
+3. Start the simulation using the following command, specifying the player data file (e.g., players.txt):
+
+   ```bash
+   erl -noshell -run game start players.txt -s init stop
+
+##File Descriptions
+game.erl: Contains the master process logic that manages the tournament. This process schedules games, handles invitations, and determines game outcomes.
+player.erl: Defines the player processes. Each player handles game requests and manages their credits.
+
+
