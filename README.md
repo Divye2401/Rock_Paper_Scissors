@@ -31,7 +31,28 @@ To get started with the Rock/Paper/Scissors Tournament simulation:
    erl -noshell -run game start players.txt -s init stop
 
 ## File Descriptions
-- **game.erl:**   Contains the master process logic that manages the tournament. This process schedules games, handles invitations, and determines game outcomes.
-- **player.erl:**   Defines the player processes. Each player handles game requests and manages their credits.
+
+- **`game.erl`**: Contains the master process logic that manages the tournament. This process schedules games, handles invitations, and determines game outcomes.
+- **`player.erl`**: Defines the player processes. Each player handles game requests and manages their credits.
+
+## Example Player File Format
+
+The player data file should be formatted as follows:
+
+```erlang
+{sam,26}.
+{jill,12}.
+{ahmad,17}.
+
+
+## Output
+
+The simulation produces a log detailing the progress of the tournament. Sample log entries include:
+
+```yaml
++ [1] new game for sam -> jill
+$ (1) sam:rock -> jill:paper = jill loses [11 credits left]
+...
+We have a winner…
 
 
