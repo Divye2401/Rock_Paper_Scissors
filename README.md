@@ -1,30 +1,24 @@
-# Rock/Paper/Scissors Tournament Simulation
-
- This project simulates a tournament using the classic Rock/Paper/Scissors game, where players interact and compete until only one remains. The simulation is implemented using Erlang, leveraging its concurrency features to manage multiple players and games.
+# Tournament Simulation in Erlang
 
 ## Overview
 
-The simulation consists of multiple players, each with a certain number of credits. The players compete in games of Rock/Paper/Scissors, and the outcomes are used to determine how many credits each player has left. Players are eliminated when their credits run out. The master process coordinates the games and logs the results.
+This project simulates a tournament where players compete against each other in games. The simulation handles player management, game scheduling, and keeps track of player credits and game outcomes. The project consists of Erlang source files and a sample player data file.
 
-## Features
+## Files
 
-- **Multi-Process Architecture:** Each player is represented by an individual Erlang process, allowing for concurrent game handling and interaction.
-- **Dynamic Game Scheduling:** The master process schedules games dynamically and handles player invitations and responses asynchronously.
-- **Credit Management:** Players start with a set number of credits and lose credits based on game outcomes. Players are disqualified when they have no credits left.
-- **Detailed Logging:** The master process provides detailed logs of game activities, including new game schedules, results, and player disqualification.
+- `game.erl`: Contains the master process logic that manages the tournament. This process schedules games, handles invitations, and determines game outcomes.
+- `player.erl`: Defines the player processes. Each player handles game requests and manages their credits.
 
 ## Getting Started
 
-To get started with the Rock/Paper/Scissors Tournament simulation, follow these steps:
+### Prerequisites
 
-1. **Clone the Repository**
+- Erlang installed on your system. You can download and install it from [Erlang's official website](https://www.erlang.org/downloads).
 
-   ```bash
-   git clone https://github.com/yourusername/rock-paper-scissors-tournament.git
-   cd rock-paper-scissors-tournament
-2. Compile the Erlang Files
+### Compilation
 
-Compile the Erlang files using erlc:
+Compile the Erlang files using the following commands:
+
+```bash
 erlc game.erl
 erlc player.erl
-
