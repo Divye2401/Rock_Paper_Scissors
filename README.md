@@ -1,6 +1,6 @@
 # Rock/Paper/Scissors Tournament Simulation
 
-Welcome to the Rock/Paper/Scissors Tournament simulation project! This project simulates a tournament using the classic Rock/Paper/Scissors game, where players interact and compete until only one remains. The simulation is implemented using Erlang, leveraging its concurrency features to manage multiple players and games.
+ This project simulates a tournament using the classic Rock/Paper/Scissors game, where players interact and compete until only one remains. The simulation is implemented using Erlang, leveraging its concurrency features to manage multiple players and games.
 
 ## Overview
 
@@ -22,3 +22,6 @@ To get started with the Rock/Paper/Scissors Tournament simulation, follow these 
    ```bash
    git clone https://github.com/yourusername/rock-paper-scissors-tournament.git
    cd rock-paper-scissors-tournament
+2. Compile the Erlang Files
+
+Compile the Erlang files using erlc:
