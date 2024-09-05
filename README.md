@@ -30,7 +30,7 @@ To get started with the Rock/Paper/Scissors Tournament simulation:
    ```bash
    erl -noshell -run game start players.txt -s init stop
 
-##File Descriptions
+## File Descriptions
 game.erl: Contains the master process logic that manages the tournament. This process schedules games, handles invitations, and determines game outcomes.
 player.erl: Defines the player processes. Each player handles game requests and manages their credits.
 
